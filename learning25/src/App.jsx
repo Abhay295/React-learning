@@ -27,6 +27,8 @@ import Form2 from './components/forms/Form2'
 import Apidemo1 from './components/apis/Apidemo1'
 import Searchmovie  from './components/apis/omdb/searchMovie'
 import MovieDetails from './components/apis/omdb/MovieDetails'
+import PostApiDemo1 from './components/apis/PostApiDemo1'
+import PostApiDemo2 from './components/apis/PostApiDemo2'
 
 function App() {
 
@@ -43,6 +45,8 @@ function App() {
         <Route path='/api1' element={<Apidemo1/>}></Route>
         <Route path='/searchmovie' element={<Searchmovie/>}></Route>
         <Route path='/moviedetails/:id' element={<MovieDetails/>}></Route>
+        <Route path='/postapidemo1' element={<PostApiDemo1/>}></Route>
+        <Route path='/postapidemo2' element={<PostApiDemo2/>}></Route>
         <Route path='/*' element={<Error404/>}></Route>
       </Routes>
     </div>

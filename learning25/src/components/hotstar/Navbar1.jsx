@@ -15,7 +15,7 @@ const Navbar1 = () => {
         <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
       </li>
       
-      <li class="nav-item">
+      {/* <li class="nav-item">
         <a class="nav-link" href="/movies">Movie</a>
       </li> 
       <li class="nav-item">
@@ -23,12 +23,18 @@ const Navbar1 = () => {
       </li> 
       <li class="nav-item">
         <a class="nav-link" href="/form2">Form2</a>
-      </li> 
+      </li>  */}
       <li class="nav-item">
         <a class="nav-link" href="/api1">Api1</a>
       </li> 
       <li class="nav-item">
         <a class="nav-link" href="/searchmovie">searchmovie</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="/postapidemo1">postApiDemo1</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="/postapidemo2">postApiDemo2</a>
       </li> 
     </ul>
     

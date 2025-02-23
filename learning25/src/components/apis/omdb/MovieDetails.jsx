@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 
 const MovieDetails = () => {
@@ -14,10 +14,12 @@ const MovieDetails = () => {
     setDetails(res.data);
   };
   const id = useParams().id;
+
+  useEffect(() => {GetMovieDetails()},[])
   return (
     <div style={{ textAlign: "center" }}>
       {/* <h1>imdbID = {id}</h1> */}
-      <button onClick={() => GetMovieDetails()}>Get</button>
+      {/* <button onClick={() => GetMovieDetails()}>Get</button> */}
       {details.Title ? 
       <div style={{ padding: "2rem", margin: "2rem 5rem" }}>
         <div
@@ -57,7 +59,7 @@ const MovieDetails = () => {
         </div>
       </div>
       :
-      <h1>Click on button to get information about this movie</h1>
+      ""
       } 
     </div>
   );
